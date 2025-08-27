@@ -26,9 +26,9 @@ public class Test {
 		eager = SingletonEager.getInstancia();
 		System.out.println(eager);
 		
-		SingletonLazyHolder lazyHolder = SingletonLazyHolder.getInstancia();
+		SingletonLazyHolder lazyHolder = SingletonLazyHolder.getInstance();
 		System.out.println(lazyHolder);
-		lazyHolder = SingletonLazyHolder.getInstancia();
+		lazyHolder = SingletonLazyHolder.getInstance();
 		System.out.println(lazyHolder);
 		
 		// Strategy
