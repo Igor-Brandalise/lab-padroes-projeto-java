@@ -9,15 +9,20 @@ package one.digitalinnovation.gof.singleton;
  */
 public class SingletonLazyHolder {
 
-	private static class InstanceHolder {
-		public static SingletonLazyHolder instancia = new SingletonLazyHolder();
-	}
-	
-	private SingletonLazyHolder() {
-		super();
-	}
-	
-	public static SingletonLazyHolder getInstancia() {
-		return InstanceHolder.instancia;
-	}
+    private static class InstanceHolder {
+        private static final SingletonLazyHolder INSTANCE = new SingletonLazyHolder();
+    }
+    
+    private SingletonLazyHolder() {
+        super();
+    }
+    
+    public static SingletonLazyHolder getInstance() {
+        return InstanceHolder.INSTANCE;
+    }
+
+    @Override
+    public String toString() {
+        return "Instância do SingletonLazyHolder: " + this.hashCode();
+    }
 }
