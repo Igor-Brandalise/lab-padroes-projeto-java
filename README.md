@@ -15,10 +15,10 @@ Implementado utilizando o padrão *Lazy Holder*, que garante uma instanciação 
 - Classe: SingletonLazyHolder
 - Método acessado via interface gráfica: getInstance()
 
-### 🧠 Strategy (em desenvolvimento)
+### 🧠 Strategy
 A estrutura está preparada para implementar o padrão Strategy futuramente. Um botão na interface simula essa ação com uma mensagem indicativa.
 
-### 🏢 Facade (em desenvolvimento)
+### 🏢 Facade
 A estrutura também está preparada para o padrão Facade, com um botão configurado que exibe uma mensagem indicativa.
 
 ---
